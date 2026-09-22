@@ -16,11 +16,12 @@ Narrative sections explain the signal and reasoning but do not replace required 
 - Phrase the lead as a testable question or observed signal, not an accusation.
 - Preserve counter-evidence and failed hypotheses.
 - Update an existing lead when the same pattern recurs instead of creating duplicates.
-- Record the next check or explicitly set it to null.
-- Record what future event would strengthen or resolve the question.
+- Link active follow-up to one or more `WATCH-NHS-*` objects.
+- Do **not** store `next_check`, expected dates, last-check state or operational watch status in a lead; watches are the sole authority for those fields.
+- Record what future evidence would strengthen or weaken the question.
 - Promote a lead to a normal evidence-backed record only when the repository contains evidence supporting the resulting factual claim.
 - Close or mark a lead unsupported when later evidence does not sustain it.
-- Preserve closure reasons so the same unsupported theory is not repeatedly rediscovered.
+- Preserve closure reasoning in the lead narrative and close the associated watch with its own closure reason so the same unsupported theory is not repeatedly rediscovered.
 
 ## Lifecycle
 
