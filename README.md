@@ -59,7 +59,8 @@ Daily intake:
 8. Record strengthening, weakening and negative findings.
 9. Write a dated scan receipt under `scans/`.
 10. Commit to the current ISO-week intake branch.
-11. Do **not** merge protected `main` without explicit authorization.
+11. Run `python3 scripts/validate_repository.py` before presenting the candidate.
+12. Do **not** merge protected `main` without explicit authorization.
 
 ## Weekly intake cycles
 
@@ -71,6 +72,10 @@ The weekly synthesis freezes the week's evidence window for review. See `automat
 
 ## Current state
 
-**NHS Evidence Model v0.3 — registry-owned intelligence and synthesis candidate.**
+**NHS Evidence Intelligence v0.3 — MERGED / ACCEPTED.**
 
-Foundation v0.1 was accepted on 22 September 2026. The first weekly intake cycle is 2026-W39.
+Accepted protected-main baseline:
+
+`06f6a79b2a2572f0a6241847ee47ad78eb4a9fce`
+
+PR #3 merged on 22 September 2026 after exact-main validation and hostile review passed. The 2026-W39 intake branch continues to collect post-acceptance daily evidence for the next protected review boundary.
