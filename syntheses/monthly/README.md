@@ -1,4 +1,4 @@
-# Monthly NHS Intelligence Synthesis Contract
+# Monthly NHS Intelligence Synthesis Contract — Lean v0.4
 
 Owned by Merrin Task Registry **T-115**.
 
@@ -6,11 +6,21 @@ Owned by Merrin Task Registry **T-115**.
 
 `syntheses/monthly/YYYY-MM.md`
 
-The filename represents the month being analysed.
+The filename represents the **full calendar month being analysed**.
+
+## First full synthesis
+
+The repository's live intelligence operation began on 22 September 2026. September is therefore a pilot/partial window and will **not** be presented as a full monthly synthesis.
+
+The first full monthly synthesis covers **1-31 October 2026** and is due **1 November 2026**.
+
+September material remains available through its daily receipts and weekly synthesis; it can be used later as prior context without pretending it represents a complete month.
 
 ## Purpose
 
-Answer: **What can accumulated evidence show now that no single daily story could show?**
+Answer:
+
+**What can accumulated evidence show now that no single daily story — or single week — could show?**
 
 ## Required sections
 
@@ -19,7 +29,7 @@ Answer: **What can accumulated evidence show now that no single daily story coul
 3. Policies/promises with observable follow-up
 4. Implementation or assurance gaps
 5. Patient-safety/accountability signals
-6. Workforce/finance/access patterns
+6. Workforce/finance/access patterns where comparable evidence exists
 7. Yorkshire/local implications
 8. Leads promoted, strengthened, weakened, unsupported or closed
 9. Negative findings worth preserving
@@ -29,8 +39,17 @@ Answer: **What can accumulated evidence show now that no single daily story coul
 
 ## Evidence threshold
 
-- Describe recurrence only when it is supported across distinct events/dates; record the count and sources.
+- Require more than one weekly window before claiming a month-scale recurring pattern.
+- Describe recurrence only when supported across distinct events/dates; record the count and sources.
 - Describe a statistical trend only with comparable series and definitions.
 - Do not convert correlation into causation.
 - Do not infer misconduct, intent or organisational failure from frequency of mentions alone.
 - Preserve contrary evidence and methodological changes.
+- If evidence is too thin for a section, say so rather than filling it.
+
+
+## Accountability direction review
+
+The monthly synthesis tests, across more than one weekly window, which commitments are being kept, slipping, changing, superseded or withdrawn; whether deadlines/success criteria repeatedly move; whether responsibility/funding moves; whether implementation repeatedly diverges from stated policy; where outcomes improve/deteriorate; which failures recur; and which remedies accumulate credible support.
+
+A monthly direction claim requires multiple dated evidence points. It is not four weekly digests concatenated.

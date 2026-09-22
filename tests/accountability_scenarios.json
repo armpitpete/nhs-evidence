@@ -1,0 +1,14 @@
+[
+  {"name":"fulfilled exactly","events":["announced","implementation-started","fulfilled"],"expected":"fulfilled"},
+  {"name":"partial delivery","events":["announced","implementation-started","partially-fulfilled"],"expected":"partially-fulfilled"},
+  {"name":"deadline delayed","events":["announced","delayed"],"expected":"delayed"},
+  {"name":"scope narrowed","events":["announced","scope-changed"],"expected":"scope-changed"},
+  {"name":"target methodology changed","events":["announced","target-changed"],"expected":"target-changed"},
+  {"name":"responsibility transferred","events":["announced","responsibility-changed"],"expected":"responsibility-changed"},
+  {"name":"superseded by later commitment","events":["announced","superseded"],"expected":"superseded"},
+  {"name":"withdrawn","events":["announced","withdrawn"],"expected":"withdrawn"},
+  {"name":"apparent failure later disproved","events":["announced","unverifiable","fulfilled"],"expected":"fulfilled"},
+  {"name":"implementation complete but outcome poor","events":["announced","fulfilled"],"expected":"fulfilled","separate_outcome_problem":true},
+  {"name":"failure with evaluated remedy","events":["announced","unmet"],"expected":"unmet","remedy_level":"evaluated"},
+  {"name":"failure with no established remedy","events":["announced","unmet"],"expected":"unmet","remedy_level":null}
+]

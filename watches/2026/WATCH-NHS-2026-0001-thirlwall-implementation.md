@@ -5,12 +5,14 @@ status: open
 watch_reason: "Obtain the underlying implementation requirements and observe how completion is assured."
 source_ids:
   - SRC-NHSE-THE-WEEK-2026-09-22
+  - SRC-DHSC-THIRLWALL-RESPONSE-2026-09-15
 evidence_ids:
   - REC-NHS-2026-0001
+  - REC-NHS-2026-0014
 related_ids:
   - LEAD-NHS-2026-0001
   - TOPIC-PATIENT-SAFETY
-expected_event: "Publication or retrieval of the NHS England letter, deadlines or implementation/assurance detail."
+expected_event: "Publication or retrieval of the underlying NHS England requirements and/or the promised full government response, with enough detail to test implementation, deadlines and assurance."
 expected_by: null
 next_check: "2026-09-23"
 last_checked: null
