@@ -8,46 +8,44 @@
   "required": ["id", "type", "title", "status", "source_ids", "date_added", "tags", "relations"],
   "properties": {
     "id": {"type": "string", "minLength": 1},
-    "type": {
-      "type": "string",
-      "enum": ["event", "policy", "guidance", "statistic", "organisation", "person", "inquiry", "consultation", "publication", "topic"]
-    },
+    "type": {"type": "string", "enum": ["event", "policy", "guidance", "statistic", "organisation", "person", "inquiry", "consultation", "publication", "topic"]},
     "title": {"type": "string", "minLength": 1},
-    "status": {
-      "type": "string",
-      "enum": ["captured", "active", "superseded", "closed", "uncertain"]
-    },
+    "status": {"type": "string", "enum": ["captured", "active", "superseded", "closed", "uncertain"]},
     "date": {"type": ["string", "null"]},
     "date_added": {"type": "string", "format": "date"},
-    "source_ids": {
-      "type": "array",
-      "items": {"type": "string"},
-      "uniqueItems": true
-    },
-    "tags": {
-      "type": "array",
-      "items": {"type": "string"},
-      "uniqueItems": true
-    },
+    "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "relations": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["type", "target"],
         "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["derived_from", "mentions", "about", "implements", "responds_to", "measured_by", "follows", "supersedes", "related_to"]
-          },
+          "type": {"type": "string", "enum": ["derived_from", "mentions", "about", "implements", "responds_to", "measured_by", "follows", "supersedes", "related_to"]},
           "target": {"type": "string"},
           "note": {"type": ["string", "null"]}
         }
       }
     },
     "summary": {"type": ["string", "null"]},
-    "limitations": {
-      "type": "array",
-      "items": {"type": "string"}
-    }
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "accountability_role": {"type": "string", "enum": ["baseline", "status-change", "outcome-evidence", "remedy-evidence"]},
+    "commitment_kind": {"type": "string", "enum": ["promise", "target", "obligation", "publication-commitment", "recommendation", "aspiration", "forecast", "announcement"]},
+    "commitment_issuer": {"type": "string"},
+    "commitment_responsible": {"type": "string"},
+    "commitment_date": {"type": "string", "format": "date"},
+    "commitment_deadline": {"type": ["string", "null"], "format": "date"},
+    "commitment_scope": {"type": "string"},
+    "commitment_success_criteria": {"type": "string"},
+    "promise_status": {"type": "string", "enum": ["announced", "implementation-started", "on-track", "fulfilled", "partially-fulfilled", "delayed", "scope-changed", "target-changed", "responsibility-changed", "superseded", "withdrawn", "unmet", "unverifiable"]},
+    "baseline_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "accountability_for": {"type": "string"},
+    "transition_type": {"type": "string", "enum": ["implementation-started", "implementation-update", "fulfilled", "partial-delivery", "deadline-change", "scope-change", "target-change", "responsibility-change", "measurement-change", "outcome-change", "superseded", "withdrawn", "unmet", "evidence-gap"]},
+    "assessment_basis": {"type": "string"},
+    "explanation_status": {"type": "string", "enum": ["established", "attributed", "inferred", "unknown"]},
+    "explanation_evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "failure_basis": {"type": "string", "enum": ["positive-evidence", "deadline-and-authoritative-non-delivery"]},
+    "remedy_for": {"type": "string"},
+    "remedy_evidence_level": {"type": "string", "enum": ["official-recommendation", "evaluated", "comparator-supported", "proposed", "speculative"]}
   }
 }

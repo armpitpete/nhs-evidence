@@ -14,6 +14,8 @@ import re
 import sys
 from pathlib import Path
 
+from validate_accountability import validate_accountability
+
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS: list[str] = []
 
@@ -259,6 +261,9 @@ def main() -> int:
                 if target not in ids:
                     err(rel, f"relation target missing id {target}")
 
+    # Accountability / promise-tracking invariants.
+    ERRORS.extend(validate_accountability(ROOT))
+
     # Relationship index resolution.
     idx = ROOT / "index" / "relations.csv"
     if idx.exists():
@@ -285,6 +290,7 @@ def main() -> int:
     print(f"PASS: validated {len(ids)} stable IDs across {len(docs)} frontmatter documents")
     print("PASS: WATCH-NHS objects are sole operational follow-up authority")
     print("PASS: references, relationship index and secret-pattern checks")
+    print("PASS: accountability baselines, status evidence, remedies and watch-link invariants")
     return 0
 
 if __name__ == "__main__":
