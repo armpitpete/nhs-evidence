@@ -139,3 +139,12 @@ A promise baseline is evidence, not a separate authority object. Later delivery/
 The system represents successful delivery and improvement with the same evidential care as failure. Absence of evidence is not proof of non-delivery.
 
 See `governance/ACCOUNTABILITY_PROMISE_TRACKING_V0.1.md`.
+
+
+## Accountability & Promise Tracking v0.1 acceptance state
+
+**MACHINE COMPLETE / OWNER HUMAN REVIEW PENDING / NOT MERGED**
+
+The v0.1 candidate has implemented immutable commitment baselines, separate status history, fair failure/uncertainty handling, remedy evidence, hostile validation, the derived Promise Ledger, accountability timelines, and weekly/monthly reporting contracts.
+
+The Week 39 report currently present is a **partial-window prototype through 22 September 2026**, not the scheduled full weekly report. Protected-main acceptance remains subject to owner review and exact-head merge authorization.
