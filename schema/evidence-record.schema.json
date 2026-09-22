@@ -4,17 +4,18 @@
   "title": "NHS Evidence Record",
   "type": "object",
   "additionalProperties": true,
+  "not": {"required": ["follow_up"]},
   "required": ["id", "type", "title", "status", "source_ids", "date_added", "tags", "relations"],
   "properties": {
     "id": {"type": "string", "minLength": 1},
     "type": {
       "type": "string",
-      "enum": ["event", "policy", "guidance", "statistic", "organisation", "person", "inquiry", "consultation", "publication", "watch", "topic"]
+      "enum": ["event", "policy", "guidance", "statistic", "organisation", "person", "inquiry", "consultation", "publication", "topic"]
     },
     "title": {"type": "string", "minLength": 1},
     "status": {
       "type": "string",
-      "enum": ["captured", "active", "superseded", "closed", "watch", "uncertain"]
+      "enum": ["captured", "active", "superseded", "closed", "uncertain"]
     },
     "date": {"type": ["string", "null"]},
     "date_added": {"type": "string", "format": "date"},
@@ -47,7 +48,6 @@
     "limitations": {
       "type": "array",
       "items": {"type": "string"}
-    },
-    "follow_up": {"type": ["string", "null"]}
+    }
   }
 }

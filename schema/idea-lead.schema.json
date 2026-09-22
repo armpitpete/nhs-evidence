@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/nhs-evidence/idea-lead.schema.json",
+  "title": "NHS Idea Lead Frontmatter",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id", "title", "status", "first_seen", "last_seen", "lead_class",
+    "source_ids", "evidence_ids", "watch_ids", "questions", "limitations"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^LEAD-NHS-[0-9]{4}-[0-9]{4}$"},
+    "title": {"type": "string", "minLength": 1},
+    "status": {
+      "type": "string",
+      "enum": ["new", "developing", "recurring", "promoted", "closed", "unsupported"]
+    },
+    "first_seen": {"type": "string", "format": "date"},
+    "last_seen": {"type": "string", "format": "date"},
+    "lead_class": {
+      "type": "string",
+      "enum": [
+        "implementation-gap", "recurring-organisation", "unusual-statistic",
+        "contradiction", "local-angle", "emerging-trend", "patient-safety",
+        "workforce-finance", "regulatory-follow-up", "data-opportunity", "other"
+      ]
+    },
+    "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "related_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "watch_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "places": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "questions": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "strengthening_evidence": {"type": "array", "items": {"type": "string"}},
+    "weakening_evidence": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"enum": ["new", "developing", "recurring"]}}},
+      "then": {"properties": {"watch_ids": {"minItems": 1}}}
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 ---
 id: REC-NHS-2026-0005
-type: watch
+type: event
 title: "Scheduled NHS, UKHSA and ONS releases — week of 22 September 2026"
-status: watch
+status: captured
 date: 2026-09-22
 date_added: 2026-09-22
 source_ids:
@@ -16,11 +16,13 @@ tags:
 relations:
   - type: derived_from
     target: SRC-NHSE-THE-WEEK-2026-09-22
+  - type: related_to
+    target: WATCH-NHS-2026-0003
 ---
 
-# Scheduled data-release watch
+# Scheduled data-release evidence
 
-The bulletin identified several releases expected later in the week. These are **scheduled/expected items**, not evidence that publication has occurred.
+The bulletin identified several releases expected later in the week. This record preserves that **source-supported schedule**; it does not own future check timing.
 
 ## NHS England
 
@@ -56,6 +58,6 @@ The bulletin identified several releases expected later in the week. These are *
 - Mortality by ethnicity following Death Certification Reform, England and Wales: 2025
 - Mortality by pregnancy status following Death Certification Reform, England and Wales: 2025
 
-## Follow-up
+## Operational follow-up
 
-On publication, create source records for the primary releases, replace expected status with observed publication status, and link any relevant trends to existing topic nodes.
+`WATCH-NHS-2026-0003` is the sole authority for expected date, next check, last check and result.
