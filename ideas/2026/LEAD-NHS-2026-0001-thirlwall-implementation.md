@@ -2,8 +2,8 @@
 id: LEAD-NHS-2026-0001
 title: "Thirlwall actions: implementation and assurance gap"
 status: new
-first_seen: 2026-09-22
-last_seen: 2026-09-22
+first_seen: "2026-09-22"
+last_seen: "2026-09-22"
 lead_class: implementation-gap
 source_ids:
   - SRC-NHSE-THE-WEEK-2026-09-22
@@ -30,7 +30,7 @@ limitations:
   - "The current repository record establishes that actions were requested; it does not establish any implementation failure."
 follow_up:
   watch_reason: "Obtain the underlying implementation requirements and observe how completion is assured."
-  next_check: 2026-09-23
+  next_check: "2026-09-23"
   expected_event: "Publication or retrieval of the NHS England letter, deadlines or implementation/assurance detail."
   expected_by: null
   last_checked: null

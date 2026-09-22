@@ -2,8 +2,8 @@
 id: LEAD-NHS-2026-0002
 title: "Martha's Rule in emergency departments: rollout versus real use"
 status: new
-first_seen: 2026-09-22
-last_seen: 2026-09-22
+first_seen: "2026-09-22"
+last_seen: "2026-09-22"
 lead_class: regulatory-follow-up
 source_ids:
   - SRC-NHSE-THE-WEEK-2026-09-22
@@ -31,7 +31,7 @@ limitations:
   - "The current source establishes an implementation plan, not completion, uptake or outcomes."
 follow_up:
   watch_reason: "Track the national rollout from announced plan to demonstrated availability and use."
-  next_check: 2026-09-23
+  next_check: "2026-09-23"
   expected_event: "Underlying implementation letter, timetable or operational standard."
   expected_by: null
   last_checked: null

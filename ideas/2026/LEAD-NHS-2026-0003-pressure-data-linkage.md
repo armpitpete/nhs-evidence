@@ -2,8 +2,8 @@
 id: LEAD-NHS-2026-0003
 title: "Linking NHS pressure datasets without assuming causation"
 status: new
-first_seen: 2026-09-22
-last_seen: 2026-09-22
+first_seen: "2026-09-22"
+last_seen: "2026-09-22"
 lead_class: data-opportunity
 source_ids:
   - SRC-NHSE-THE-WEEK-2026-09-22
@@ -30,9 +30,9 @@ limitations:
   - "This is a data-analysis opportunity only. No causal relationship is currently established."
 follow_up:
   watch_reason: "Capture the scheduled official releases and test comparability before analysing relationships."
-  next_check: 2026-09-24
+  next_check: "2026-09-24"
   expected_event: "Publication of the scheduled NHS England, UKHSA and ONS releases listed in the source bulletin."
-  expected_by: 2026-09-25
+  expected_by: "2026-09-25"
   last_checked: null
   check_result: not-checked
   closure_reason: null
