@@ -1,6 +1,6 @@
 # NHS Watches
 
-Watches represent **future conditions or expected events**, not claims.
+Watches represent **observable future conditions or expected events**, not claims and not generic research interests.
 
 ## Sole operational authority
 
@@ -16,16 +16,24 @@ Watches represent **future conditions or expected events**, not claims.
 
 Evidence records preserve what a source said. Leads preserve questions and hypotheses. They may reference watches, but must not duplicate operational timing or check state.
 
-Use a watch when the useful question is: "What should happen next, and when should we check?"
+## Creation threshold
 
-Examples:
+Create a watch only when all of the following are true:
+
+1. there is a reasonably observable future event/condition;
+2. checking again at a defined or justified interval could change the evidence state;
+3. the event is linked to existing evidence or a bounded lead.
+
+Good examples:
 
 - consultation response expected;
 - implementation deadline approaching;
 - inquiry recommendation response due;
 - scheduled statistics release;
-- next CQC inspection or HSSIB recommendation response;
-- promised publication not yet found.
+- expected inspection/update;
+- promised publication not yet observed.
+
+Do **not** create a watch equivalent to "monitor this topic" or "look for more information". Keep that as a lead question until an observable trigger exists.
 
 ## IDs
 
@@ -45,5 +53,15 @@ A watch records:
 - result;
 - status;
 - closure reason when applicable.
+
+## Weekly hygiene
+
+T-114 reviews open watches weekly:
+
+- close/satisfy completed watches;
+- supersede duplicates;
+- identify overdue watches;
+- reject vague indefinite monitoring;
+- preserve closed/superseded history rather than deleting it.
 
 Never treat absence of a publication as evidence of failure until the relevant deadline/expectation is established.

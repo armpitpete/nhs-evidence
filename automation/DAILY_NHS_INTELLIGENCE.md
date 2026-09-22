@@ -1,4 +1,4 @@
-# Daily NHS Intelligence Intake
+# Daily NHS Intelligence Intake — Lean v0.4
 
 ## Authority
 
@@ -12,71 +12,101 @@ Standalone ChatGPT scheduling for this work is retired. Protected `main` is neve
 
 ## Objective
 
-Build a cumulative NHS intelligence resource that supports evidence retrieval, follow-up accountability and generation of new article/investigation ideas.
+Build useful cumulative NHS intelligence without turning evidence-management overhead into the project.
 
-## Daily source priority
-
-### Tier 1 — core authoritative sources
-
-Check routinely:
-
-1. NHS England
-2. Department of Health and Social Care
-3. Care Quality Commission
-4. NICE
-5. UK Health Security Agency
-6. Office for National Statistics
-7. Health Services Safety Investigations Body (HSSIB)
-8. NHS trusts and integrated care boards
-
-### Tier 2 — oversight, accountability and specialist sources
-
-Check on a rolling or triggered basis:
-
-- Parliamentary and Health Service Ombudsman
-- NHS Resolution
-- National Audit Office
-- coroners' Prevention of Future Deaths reports
-- Parliament: Health and Social Care Committee, Public Accounts Committee, written statements and relevant deposited material
-- NHS Blood and Transplant
-- Healthcare Quality Improvement Partnership and national clinical audits
-- professional regulators where directly relevant
-- Healthwatch and other formal patient-experience evidence where relevant
-
-### Discovery
-
-Use reputable national, specialist and local journalism to discover developments that primary-source feeds may not surface clearly. Reporting must be attributed and should be followed back to primary documentation wherever possible.
+Daily intake is **triage, not exhaustive research**.
 
 ## Two daily questions
 
-Every run must ask both:
+Every run asks:
 
-1. **What changed since the last scan?**
+1. **What materially changed since the last scan?**
 2. **Which `WATCH-NHS-*` objects are due now?**
 
-Watch objects are the sole operational authority for future timing and check state. The project must not become dependent on the news cycle.
+If neither produces a material change, write a concise no-material-change receipt and stop.
 
-## What to look for
+## Source plan
 
-- patient safety
-- inspection/regulatory findings
-- maternity/neonatal care
-- emergency and ambulance pressures
-- waiting lists and access
-- workforce, sickness and pay
-- finance and productivity
-- digital systems/data programmes
-- public-health surveillance
-- medicines/treatment guidance
-- inequalities
-- complaints and patient experience
-- implementation of announced reforms
-- inquiries/inquests
-- unusual or newly released statistics
-- repeated appearances of the same trust, ICB, supplier or policy
-- Yorkshire/local implications
-- contradictions between stated policy and observed outcomes
-- overdue recommendations, promises, consultations or implementation dates
+### Core daily
+
+Check a bounded high-signal set:
+
+1. due `WATCH-NHS-*` sources;
+2. NHS England;
+3. Department of Health and Social Care / GOV.UK health publications;
+4. recent CQC and HSSIB material with plausible system significance.
+
+This is not an exhaustive crawl.
+
+### Rotating authoritative sources
+
+Check a small rotating subset rather than every source family every day:
+
+- NICE;
+- UKHSA;
+- ONS;
+- Parliamentary and Health Service Ombudsman;
+- National Audit Office;
+- NHS Resolution;
+- Parliament committees/statements;
+- coroners' Prevention of Future Deaths material;
+- NHS Blood and Transplant;
+- HQIP / national clinical audits;
+- professional regulators;
+- formal patient-experience sources.
+
+The scan receipt records which rotating families were actually checked.
+
+### Triggered/local sources
+
+Check individual trusts, ICBs, York/Scarborough services and other local bodies **only when**:
+
+- an active lead/watch requires it;
+- a material national development creates a clear local question; or
+- a credible discovery source points to a specific local development.
+
+Do not attempt to survey all trusts or ICBs daily.
+
+### Discovery
+
+Use a bounded reputable-news scan to discover evidence that primary feeds may obscure. Reporting is discovery material unless it independently warrants durable capture; follow back to primary evidence where possible.
+
+## Durable promotion threshold
+
+A useful item may remain only in the daily scan receipt.
+
+Create a durable `SRC-*` / `REC-*` object only when at least one of these is true:
+
+- it materially changes an existing lead or conclusion boundary;
+- it establishes a fact likely to be reused later;
+- it creates, satisfies or materially changes an observable watch;
+- it supplies important comparable data;
+- it materially contradicts or revises existing evidence;
+- it supports a bounded new investigation or synthesis question.
+
+Otherwise record the item, attribution and link in the scan receipt and leave it unpromoted.
+
+## Lead promotion
+
+Daily creation of a new `LEAD-NHS-*` should be uncommon.
+
+Create one immediately only where the evidence already supports a bounded, falsifiable/usefully testable question. Otherwise carry the signal in the daily receipt for the weekly synthesis to assess.
+
+Update an existing lead before creating a new one.
+
+## Watch threshold
+
+Create a `WATCH-NHS-*` only for a reasonably observable future event or condition with a meaningful re-check.
+
+Good examples:
+
+- published deadline;
+- expected statistics release;
+- inquiry/recommendation response;
+- implementation milestone;
+- known follow-up inspection or formal update.
+
+Do not create a watch whose real meaning is merely "look for anything interesting about this topic". Keep that question in the lead.
 
 ## Ingestion discipline
 
@@ -85,27 +115,39 @@ Watch objects are the sole operational authority for future timing and check sta
 - Preserve publication and event dates separately where relevant.
 - Separate source facts, attributed statements and analysis.
 - Never infer misconduct or causation from correlation.
-- Update existing timelines/leads/watches when new evidence extends an old story.
-- Record negative findings where they genuinely test an existing lead.
+- Record negative findings only where they genuinely test an existing question.
 - Do not lower the evidence threshold on a slow news day.
 - Apply `governance/INGESTION_BOUNDARY.md` before committing non-public or personal information.
 - Do not put operational `next_check`, expected-date or last-result state in evidence records or leads; link to a watch instead.
 
+## One-commit daily rule
+
+A completed daily run should produce **one atomic intake commit** containing that day's scan and any promoted evidence/lead/watch/index changes.
+
+Preferred commit form:
+
+`NHS intelligence intake — YYYY-MM-DD`
+
+Use the Git data/tree path or a controlled working copy to batch the files. Do not create a file-by-file commit chain.
+
+Do not rewrite or force-push already-published candidate history merely to make older commits prettier; the rule applies prospectively.
+
 ## Validation gate
 
-Before committing a daily intake candidate, run:
+Before moving the weekly branch to the daily candidate, run:
 
 ```bash
 python3 scripts/validate_repository.py
+git diff --check
 ```
 
-A non-zero result blocks the commit/presentation gate. Validation covers ID uniqueness, required lead/watch/evidence fields, active lead → watch linkage, reference resolution, relationship-index resolution, date shapes, duplicate source signatures where available, and obvious credential/prohibited-frontmatter patterns.
+A non-zero result blocks the candidate.
 
 ## Branching
 
 Use the current ISO-week branch: `intake/YYYY-Www`.
 
-The first cycle, 2026-W39, supersedes the earlier standing-branch experiment. See `automation/INTAKE_CYCLES.md`.
+See `automation/INTAKE_CYCLES.md`.
 
 ## Notification rule
 
