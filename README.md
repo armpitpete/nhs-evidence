@@ -1,26 +1,31 @@
 # NHS Evidence
 
-An evidence-led repository for accumulating, normalising and linking NHS-related information over time.
+An evidence-led repository for accumulating, normalising and linking NHS-related information over time, with a separate intelligence layer for developing story and investigation ideas.
 
 ## Purpose
 
 The repository is designed to answer questions across time, not merely archive documents. It should make it possible to trace an NHS policy, inquiry, organisation, statistic or incident across later publications and outcomes.
 
+A second purpose is **idea generation**: repeated daily scanning should surface implementation gaps, recurring organisations, unusual statistics, contradictions, local angles and patterns worth investigating. Leads are stored separately from evidence so an interesting hypothesis is never silently promoted into fact.
+
 ## Core rules
 
 1. **Evidence before conclusion.** Preserve what the source actually supports.
 2. **Separate fact, attributed claim and inference.** Do not silently convert one into another.
-3. **Stable IDs.** Every source and extracted record gets an ID that does not change when filenames move.
-4. **Explicit provenance.** Every substantive record points back to one or more source IDs.
-5. **Explicit uncertainty.** Unknown, disputed and inferred fields stay visibly marked.
-6. **Link rather than duplicate.** Reuse existing organisations, topics, policies and events.
-7. **No unsupported causation.** Temporal association is not evidence of causation.
-8. **Public-repo copyright discipline.** Do not republish complete third-party documents unless reuse rights are clear. Store metadata, factual summaries, short quotations where justified, and links or private source references.
+3. **Separate leads from evidence.** A lead may be worth pursuing without yet being established.
+4. **Stable IDs.** Every source, evidence record and lead gets an ID that does not change when filenames move.
+5. **Explicit provenance.** Every substantive record points back to one or more source IDs.
+6. **Explicit uncertainty.** Unknown, disputed and inferred fields stay visibly marked.
+7. **Link rather than duplicate.** Reuse existing organisations, topics, policies and events.
+8. **No unsupported causation.** Temporal association is not evidence of causation.
+9. **Public-repo copyright discipline.** Do not republish complete third-party documents unless reuse rights are clear. Store metadata, factual summaries, short quotations where justified, and links or private source references.
 
 ## Structure
 
-- `sources/` — one normalized capture per source document, bulletin, dataset or page.
+- `sources/` — normalized captures of source documents, datasets and pages.
 - `records/` — atomic evidence records extracted from sources.
+- `ideas/` — developing story/investigation leads, explicitly not established evidence.
+- `scans/` — dated daily intelligence-scan receipts.
 - `topics/` — durable topic nodes used across records.
 - `organisations/` — durable organisation nodes.
 - `people/` — durable person nodes where needed.
@@ -30,9 +35,10 @@ The repository is designed to answer questions across time, not merely archive d
 - `consultations/` — consultation records.
 - `timelines/` — derived chronological views.
 - `index/` — machine-readable relationship indexes.
-- `schema/` — record contracts.
+- `schema/` — evidence and lead contracts.
+- `automation/` — standing ingestion instructions.
 
-## Record model
+## Evidence record model
 
 Each evidence record should contain:
 
@@ -47,6 +53,36 @@ Each evidence record should contain:
 - explicit relations to other IDs
 - uncertainty/limitations where relevant
 - follow-up state when the item needs future checking
+
+## Idea lead model
+
+A lead records **why something may be worth investigating**, not a conclusion.
+
+Each lead should contain:
+
+- stable `LEAD-NHS-...` ID
+- title and status
+- first-seen / last-seen dates
+- the observed signal
+- why it may matter
+- supporting source/evidence IDs
+- relevant organisations/topics/places
+- questions that would test the lead
+- what evidence would strengthen or weaken it
+- clear limitations
+
+Useful lead classes include:
+
+- implementation gap
+- recurring organisation
+- unusual statistic
+- contradiction or policy tension
+- local/Yorkshire angle
+- emerging trend
+- patient-safety signal
+- workforce/finance pressure
+- regulatory follow-up
+- data-release opportunity
 
 ## Relationship vocabulary
 
@@ -64,18 +100,24 @@ Initial relationship types:
 
 The vocabulary can grow, but new relation types should have a clear meaning and not duplicate an existing one.
 
-## Ingestion workflow
+## Daily ingestion workflow
 
-1. Capture the source and assign a source ID.
-2. Summarise the complete source at factual level.
-3. Extract atomic records only where useful.
-4. Link records to existing entities/topics.
-5. Add watches for expected future publications or follow-up.
-6. When new evidence arrives, update links rather than rewriting history.
-7. Preserve contradictions and revisions as evidence instead of deleting them.
+1. Scan the previous day's NHS-related material.
+2. Prioritise primary sources: NHS England, DHSC, CQC, NICE, UKHSA, ONS, trusts and ICBs.
+3. Use reputable journalism as discovery material and attribute it clearly.
+4. Deduplicate against existing sources, records and leads.
+5. Capture new primary evidence and assign stable source IDs.
+6. Extract atomic evidence records only where useful.
+7. Link new evidence to existing topics, organisations, policies, inquiries and prior records.
+8. Create or update leads where the material suggests a worthwhile question or pattern.
+9. Write a dated scan receipt under `scans/`.
+10. Update the standing `automation/daily-nhs-intake` branch and its pull request.
+11. Do **not** merge protected `main` without explicit authorization.
+
+A quiet day is still a valid scan. Record that it was checked rather than manufacturing a story.
 
 ## Current state
 
-**NHS Evidence Model v0.1 — foundation candidate.**
+**NHS Evidence Model v0.2 — daily intelligence intake candidate.**
 
-The first captured source is NHS England's *The Week* bulletin supplied on 22 September 2026.
+Foundation v0.1 was accepted on 22 September 2026. Daily scanning begins 23 September 2026.
