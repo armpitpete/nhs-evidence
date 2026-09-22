@@ -14,7 +14,7 @@ commitment_deadline: "2026-09-25"
 commitment_scope: "Publish the confirmed September health-related releases on their stated release dates, including weekly provisional deaths on 23 September and Death Certification Reform 2025 on 25 September."
 commitment_success_criteria: "The relevant ONS release is publicly available on the confirmed date; publication is verified rather than inferred from the calendar."
 promise_status: announced
-baseline_fingerprint: "757558c272d2d0cd1b81c744c015117b0576cfaaa2427ba44ccf147eaea067fa"
+baseline_fingerprint: "8d3583fbd79e3fbd250357d6fa50f77cbbf4d7cc969712104ca56a1cef8091b8"
 source_ids:
   - SRC-ONS-RELEASE-CALENDAR-2026-09-22
 tags:
