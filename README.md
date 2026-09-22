@@ -124,3 +124,18 @@ Accepted protected-main baseline:
 **Lean Intake v0.4 — operational candidate** on the active 2026-W39 intake branch.
 
 v0.4 changes operating effort, not the accepted evidence ontology: lighter daily triage, selective promotion, atomic daily commits, stronger weekly synthesis, tighter watch hygiene, explicit longitudinal change detection and a full-month threshold for monthly synthesis.
+
+
+## Accountability & Promise Tracking v0.1
+
+The accountability layer applies longitudinal memory to public commitments.
+
+Operating loop:
+
+**commitment → preserved baseline → watch → delivery/change evidence → status history → accountability question → remedy evidence → re-check**
+
+A promise baseline is evidence, not a separate authority object. Later delivery/change evidence is stored as a new record pointing back to the baseline. The baseline is never rewritten to show the current state.
+
+The system represents successful delivery and improvement with the same evidential care as failure. Absence of evidence is not proof of non-delivery.
+
+See `governance/ACCOUNTABILITY_PROMISE_TRACKING_V0.1.md`.

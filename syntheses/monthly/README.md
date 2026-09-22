@@ -46,3 +46,10 @@ Answer:
 - Do not infer misconduct, intent or organisational failure from frequency of mentions alone.
 - Preserve contrary evidence and methodological changes.
 - If evidence is too thin for a section, say so rather than filling it.
+
+
+## Accountability direction review
+
+The monthly synthesis tests, across more than one weekly window, which commitments are being kept, slipping, changing, superseded or withdrawn; whether deadlines/success criteria repeatedly move; whether responsibility/funding moves; whether implementation repeatedly diverges from stated policy; where outcomes improve/deteriorate; which failures recur; and which remedies accumulate credible support.
+
+A monthly direction claim requires multiple dated evidence points. It is not four weekly digests concatenated.

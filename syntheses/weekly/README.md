@@ -55,3 +55,21 @@ The weekly synthesis must not collapse earlier and later states into one current
 - Promote daily signals only when they now justify durable repository objects.
 - Review watch hygiene; vague monitoring belongs in a lead, not an indefinite watch.
 - Freeze the weekly candidate for review; do not merge protected `main` automatically.
+
+
+## Accountability Review
+
+The weekly synthesis also reports, where evidence exists:
+
+- new material commitments;
+- promise-status changes;
+- commitments fulfilled or demonstrably improved;
+- commitments under pressure, delayed or changed;
+- deadlines approaching or passed;
+- demonstrated accountability failures;
+- evidence gaps that prevent a failure judgment;
+- remedy evidence and its strength;
+- Yorkshire/local delivery comparisons;
+- next accountability checks.
+
+The report prioritises changes in state, not publication volume. Empty sections stay empty rather than being padded.

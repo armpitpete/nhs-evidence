@@ -65,3 +65,10 @@ T-114 reviews open watches weekly:
 - preserve closed/superseded history rather than deleting it.
 
 Never treat absence of a publication as evidence of failure until the relevant deadline/expectation is established.
+
+
+## Promise/accountability watches
+
+A material commitment with an observable future delivery point must normally link to a `WATCH-NHS-*` object unless later evidence already closes a retrospective commitment.
+
+The watch owns timing. The baseline record owns what was promised. A watch never decides by itself whether a promise was kept; it triggers the evidence check from which a separate status-change record may be created.

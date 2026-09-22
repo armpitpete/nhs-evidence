@@ -32,3 +32,10 @@ For unpromoted material, retain enough attribution/link context for weekly revie
 A scan receipt is an audit trail of what was actually checked. It is not itself evidence for a substantive NHS claim.
 
 A no-material-change day should stay concise.
+
+
+## Accountability fields in daily triage
+
+Where relevant, a daily receipt also records new material commitments, commitments checked, earlier/later positions compared, supported status changes, possible failures requiring weekly review, improvements/fulfilled commitments, evidence gaps and items deliberately left unpromoted.
+
+"No evidence found" is an evidence gap, not an unmet commitment.
