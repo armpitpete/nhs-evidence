@@ -6,7 +6,7 @@
   "additionalProperties": true,
   "required": [
     "id", "title", "status", "watch_reason", "source_ids", "evidence_ids",
-    "expected_event", "expected_by", "next_check", "last_checked", "last_result"
+    "related_ids", "expected_event", "expected_by", "next_check", "last_checked", "last_result"
   ],
   "properties": {
     "id": {"type": "string", "pattern": "^WATCH-NHS-[0-9]{4}-[0-9]{4}$"},
