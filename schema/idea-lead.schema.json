@@ -6,7 +6,7 @@
   "additionalProperties": true,
   "required": [
     "id", "title", "status", "first_seen", "last_seen", "lead_class",
-    "source_ids", "evidence_ids", "questions", "limitations", "follow_up"
+    "source_ids", "evidence_ids", "watch_ids", "questions", "limitations"
   ],
   "properties": {
     "id": {"type": "string", "pattern": "^LEAD-NHS-[0-9]{4}-[0-9]{4}$"},
@@ -33,26 +33,12 @@
     "questions": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
     "strengthening_evidence": {"type": "array", "items": {"type": "string"}},
     "weakening_evidence": {"type": "array", "items": {"type": "string"}},
-    "limitations": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "follow_up": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "watch_reason", "next_check", "expected_event", "expected_by",
-        "last_checked", "check_result", "closure_reason"
-      ],
-      "properties": {
-        "watch_reason": {"type": "string", "minLength": 1},
-        "next_check": {"type": ["string", "null"], "format": "date"},
-        "expected_event": {"type": ["string", "null"]},
-        "expected_by": {"type": ["string", "null"], "format": "date"},
-        "last_checked": {"type": ["string", "null"], "format": "date-time"},
-        "check_result": {
-          "type": ["string", "null"],
-          "enum": ["not-checked", "no-change", "strengthened", "weakened", "closed", "source-unavailable", null]
-        },
-        "closure_reason": {"type": ["string", "null"]}
-      }
+    "limitations": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"enum": ["new", "developing", "recurring"]}}},
+      "then": {"properties": {"watch_ids": {"minItems": 1}}}
     }
-  }
+  ]
 }
