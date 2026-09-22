@@ -11,7 +11,8 @@ evidence_ids:
   - REC-NHS-2026-0002
 related_ids:
   - TOPIC-PATIENT-SAFETY
-watch_ids: []
+watch_ids:
+  - WATCH-NHS-2026-0002
 places: []
 questions:
   - "What is the implementation timetable?"
@@ -29,14 +30,6 @@ weakening_evidence:
   - "Evaluation showing the mechanism works similarly across settings."
 limitations:
   - "The current source establishes an implementation plan, not completion, uptake or outcomes."
-follow_up:
-  watch_reason: "Track the national rollout from announced plan to demonstrated availability and use."
-  next_check: "2026-09-23"
-  expected_event: "Underlying implementation letter, timetable or operational standard."
-  expected_by: null
-  last_checked: null
-  check_result: not-checked
-  closure_reason: null
 ---
 
 # Martha's Rule in emergency departments: rollout versus real use
@@ -50,3 +43,7 @@ The captured NHS England bulletin describes plans to implement Martha's Rule in 
 A national rollout creates a measurable follow-up question: whether the escalation route becomes consistently available, understood and used in emergency departments, and what published evidence exists about its operation.
 
 This is not evidence that the rollout is ineffective.
+
+## Operational follow-up
+
+Timing and check state are owned solely by `WATCH-NHS-2026-0002`.
