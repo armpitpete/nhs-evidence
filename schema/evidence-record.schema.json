@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/nhs-evidence/evidence-record.schema.json",
+  "title": "NHS Evidence Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "type", "title", "status", "source_ids", "date_added", "tags", "relations"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "type": {
+      "type": "string",
+      "enum": ["event", "policy", "guidance", "statistic", "organisation", "person", "inquiry", "consultation", "publication", "watch", "topic"]
+    },
+    "title": {"type": "string", "minLength": 1},
+    "status": {
+      "type": "string",
+      "enum": ["captured", "active", "superseded", "closed", "watch", "uncertain"]
+    },
+    "date": {"type": ["string", "null"]},
+    "date_added": {"type": "string", "format": "date"},
+    "source_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["derived_from", "mentions", "about", "implements", "responds_to", "measured_by", "follows", "supersedes", "related_to"]
+          },
+          "target": {"type": "string"},
+          "note": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "summary": {"type": ["string", "null"]},
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "follow_up": {"type": ["string", "null"]}
+  }
+}

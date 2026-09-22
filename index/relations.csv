@@ -1,0 +1,9 @@
+from_id,relation,to_id,note
+REC-NHS-2026-0001,derived_from,SRC-NHSE-THE-WEEK-2026-09-22,"Extracted from bulletin"
+REC-NHS-2026-0001,about,TOPIC-PATIENT-SAFETY,"Patient-safety governance"
+REC-NHS-2026-0002,derived_from,SRC-NHSE-THE-WEEK-2026-09-22,"Extracted from bulletin"
+REC-NHS-2026-0002,about,TOPIC-PATIENT-SAFETY,"Escalation and deterioration"
+REC-NHS-2026-0003,derived_from,SRC-NHSE-THE-WEEK-2026-09-22,"Extracted from bulletin"
+REC-NHS-2026-0003,about,TOPIC-MATERNITY-NEONATAL,"NHS-wide staff engagement"
+REC-NHS-2026-0004,derived_from,SRC-NHSE-THE-WEEK-2026-09-22,"Extracted from bulletin"
+REC-NHS-2026-0005,derived_from,SRC-NHSE-THE-WEEK-2026-09-22,"Expected release list"
