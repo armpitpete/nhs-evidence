@@ -52,9 +52,9 @@ Use reputable national, specialist and local journalism to discover developments
 Every run must ask both:
 
 1. **What changed since the last scan?**
-2. **What old question, deadline, promise or expected publication is due for re-checking now?**
+2. **Which `WATCH-NHS-*` objects are due now?**
 
-The second question is mandatory. The project must not become dependent on the news cycle.
+Watch objects are the sole operational authority for future timing and check state. The project must not become dependent on the news cycle.
 
 ## What to look for
 
@@ -89,6 +89,17 @@ The second question is mandatory. The project must not become dependent on the n
 - Record negative findings where they genuinely test an existing lead.
 - Do not lower the evidence threshold on a slow news day.
 - Apply `governance/INGESTION_BOUNDARY.md` before committing non-public or personal information.
+- Do not put operational `next_check`, expected-date or last-result state in evidence records or leads; link to a watch instead.
+
+## Validation gate
+
+Before committing a daily intake candidate, run:
+
+```bash
+python3 scripts/validate_repository.py
+```
+
+A non-zero result blocks the commit/presentation gate. Validation covers ID uniqueness, required lead/watch/evidence fields, active lead → watch linkage, reference resolution, relationship-index resolution, date shapes, duplicate source signatures where available, and obvious credential/prohibited-frontmatter patterns.
 
 ## Branching
 
