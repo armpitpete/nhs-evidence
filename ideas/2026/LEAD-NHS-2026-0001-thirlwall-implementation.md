@@ -11,7 +11,8 @@ evidence_ids:
   - REC-NHS-2026-0001
 related_ids:
   - TOPIC-PATIENT-SAFETY
-watch_ids: []
+watch_ids:
+  - WATCH-NHS-2026-0001
 places: []
 questions:
   - "What exact actions and deadlines are in the underlying NHS England letter?"
@@ -28,14 +29,6 @@ weakening_evidence:
   - "A robust national reporting mechanism with completion evidence."
 limitations:
   - "The current repository record establishes that actions were requested; it does not establish any implementation failure."
-follow_up:
-  watch_reason: "Obtain the underlying implementation requirements and observe how completion is assured."
-  next_check: "2026-09-23"
-  expected_event: "Publication or retrieval of the NHS England letter, deadlines or implementation/assurance detail."
-  expected_by: null
-  last_checked: null
-  check_result: not-checked
-  closure_reason: null
 ---
 
 # Thirlwall actions: implementation and assurance gap
@@ -49,3 +42,7 @@ NHS England's captured bulletin says trusts and ICBs were sent recommendations a
 The useful question is not whether actions were announced, but how implementation is evidenced across organisations and how completion or non-completion is assured.
 
 This is a **lead**, not evidence that any organisation has failed to implement the actions.
+
+## Operational follow-up
+
+Timing and check state are owned solely by `WATCH-NHS-2026-0001`.
