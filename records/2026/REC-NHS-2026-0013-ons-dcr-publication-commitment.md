@@ -11,7 +11,7 @@ commitment_issuer: "Office for National Statistics"
 commitment_responsible: "Office for National Statistics"
 commitment_date: "2026-09-22"
 commitment_deadline: "2026-09-25"
-commitment_scope: "Publish the confirmed September health-related releases on their stated dates, including weekly provisional deaths on 23 September and Death Certification Reform 2025 on 25 September."
+commitment_scope: "Publish the confirmed September health-related releases on their stated release dates, including weekly provisional deaths on 23 September and Death Certification Reform 2025 on 25 September."
 commitment_success_criteria: "The relevant ONS release is publicly available on the confirmed date; publication is verified rather than inferred from the calendar."
 promise_status: announced
 baseline_fingerprint: "757558c272d2d0cd1b81c744c015117b0576cfaaa2427ba44ccf147eaea067fa"

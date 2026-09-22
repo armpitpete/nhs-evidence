@@ -51,3 +51,8 @@ It is not evidence that local services are failing.
 ## Operational follow-up
 
 Timing and check state are owned by `WATCH-NHS-2026-0004`.
+
+
+## Promise/accountability boundary
+
+HSSIB has made national safety recommendations relevant to this lead. A recommendation is not automatically a DHSC/NHS England promise. Until an authoritative response accepts, commits to or operationalises a recommendation, this lead must not represent it as a government/NHS delivery commitment.
