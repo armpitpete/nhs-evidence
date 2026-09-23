@@ -16,7 +16,7 @@ expected_event: "Publication or retrieval of the underlying NHS England requirem
 expected_by: null
 next_check: "2026-09-24"
 last_checked: "2026-09-23T15:41:37+01:00"
-last_result: changed
+last_result: source-unavailable
 closure_reason: null
 ---
 
