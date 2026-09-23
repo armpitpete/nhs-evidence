@@ -1,6 +1,6 @@
 # Accountability & Promise Tracking v0.1 — acceptance receipt
 
-Status: **MACHINE COMPLETE / OWNER HUMAN REVIEW PENDING / NOT MERGED**
+Status: **MERGED / ACCEPTED**
 
 ## Authority
 
@@ -14,7 +14,7 @@ It does not create a new source of truth. Evidence records preserve commitments 
 
 ## Machine result
 
-**PASS on the implementation candidate before this receipt was added.**
+**PASS on the implementation candidate and PASS again on the resulting protected-main merge SHA.**
 
 Validated evidence included:
 
@@ -31,7 +31,14 @@ Validated evidence included:
 - `git diff --check`;
 - comparison against protected main.
 
-A final exact-head revalidation is required after this receipt commit and is recorded in the protected-review evidence/PR surface.
+Final candidate exact-head validation passed at `48b21028158576f4c3426a3f98be37318742a95c`.
+
+Protected merge produced `a2635f29a514bcdfc7c5a994146006d3f131f49b`, with exact parents:
+
+- previous protected main: `06f6a79b2a2572f0a6241847ee47ad78eb4a9fce`;
+- accepted PR #4 head: `48b21028158576f4c3426a3f98be37318742a95c`.
+
+Post-merge exact-main validation passed.
 
 ## Live pilot cases
 
@@ -96,22 +103,22 @@ The full Week 39 report is date-gated to **27 September 2026 at 18:00 Europe/Lon
 4. Some commitments have no stated deadline. They can be watched for an observable event but cannot fairly be labelled late without a supported time expectation.
 5. Remedy evidence may identify credible interventions without establishing that they will solve a specific local problem.
 
-## Human gate
+## Human review
 
-The owner should read `syntheses/weekly/2026-W39-accountability-prototype.md` and decide whether:
+**APPROVED by owner on 22 September 2026.**
 
-- the report is useful rather than bureaucratic;
-- failure language is fair;
-- positive delivery is visible enough;
-- remedy language is appropriately cautious;
-- the report makes the next accountability question clear.
+The owner explicitly approved the Accountability & Promise Tracking v0.1 human review and authorized merging PR #4 at exact head `48b21028158576f4c3426a3f98be37318742a95c` into protected `main`.
 
-No claim of human acceptance is made until that review occurs.
+## Protected merge receipt
 
-## Protected boundary
+PR #4 was merged successfully.
 
-Do not merge protected `main` without a fresh exact-head authorization after:
+Resulting protected-main SHA:
 
-1. final exact-head machine validation;
-2. owner human review;
-3. exact-head protected merge authorization.
+`a2635f29a514bcdfc7c5a994146006d3f131f49b`
+
+Post-merge exact-main checks passed.
+
+## Final state
+
+**Accountability & Promise Tracking v0.1 — MERGED / ACCEPTED.**

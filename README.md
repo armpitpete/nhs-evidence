@@ -117,11 +117,13 @@ The weekly synthesis freezes the week's evidence window for review. See `automat
 
 **NHS Evidence Intelligence v0.3 — MERGED / ACCEPTED.**
 
-Accepted protected-main baseline:
+**Lean Intake v0.4 — MERGED / ACCEPTED.**
 
-`06f6a79b2a2572f0a6241847ee47ad78eb4a9fce`
+**Accountability & Promise Tracking v0.1 — MERGED / ACCEPTED.**
 
-**Lean Intake v0.4 — operational candidate** on the active 2026-W39 intake branch.
+Current protected-main acceptance baseline:
+
+`a2635f29a514bcdfc7c5a994146006d3f131f49b`
 
 v0.4 changes operating effort, not the accepted evidence ontology: lighter daily triage, selective promotion, atomic daily commits, stronger weekly synthesis, tighter watch hygiene, explicit longitudinal change detection and a full-month threshold for monthly synthesis.
 
@@ -143,8 +145,10 @@ See `governance/ACCOUNTABILITY_PROMISE_TRACKING_V0.1.md`.
 
 ## Accountability & Promise Tracking v0.1 acceptance state
 
-**MACHINE COMPLETE / OWNER HUMAN REVIEW PENDING / NOT MERGED**
+**MERGED / ACCEPTED**
 
-The v0.1 candidate has implemented immutable commitment baselines, separate status history, fair failure/uncertainty handling, remedy evidence, hostile validation, the derived Promise Ledger, accountability timelines, and weekly/monthly reporting contracts.
+Owner human review was explicitly approved on 22 September 2026. PR #4 at exact head `48b21028158576f4c3426a3f98be37318742a95c` was merged into protected `main`, producing protected-main SHA `a2635f29a514bcdfc7c5a994146006d3f131f49b`.
 
-The Week 39 report currently present is a **partial-window prototype through 22 September 2026**, not the scheduled full weekly report. Protected-main acceptance remains subject to owner review and exact-head merge authorization.
+Post-merge exact-main validation passed: repository structure, WATCH-NHS authority, accountability baseline/status/remedy invariants, 12 canonical scenarios, hostile tests, Promise Ledger reproducibility and exact merge lineage all passed.
+
+The Week 39 report currently present remains a **partial-window prototype through 22 September 2026**, not the scheduled full weekly report.
