@@ -6,21 +6,23 @@ watch_reason: "Capture the scheduled official releases and test comparability be
 source_ids:
   - SRC-NHSE-THE-WEEK-2026-09-22
   - SRC-ONS-RELEASE-CALENDAR-2026-09-22
+  - SRC-ONS-WEEKLY-DEATHS-2026-09-23
 evidence_ids:
   - REC-NHS-2026-0005
   - REC-NHS-2026-0008
+  - REC-NHS-2026-0015
 related_ids:
   - LEAD-NHS-2026-0003
 expected_event: "Publication of the scheduled NHS England, DHSC, UKHSA and ONS releases listed in REC-NHS-2026-0005."
 expected_by: "2026-09-25"
-next_check: "2026-09-23"
-last_checked: "2026-09-22T19:51:05+01:00"
+next_check: "2026-09-25"
+last_checked: "2026-09-23T15:41:37+01:00"
 last_result: changed
 closure_reason: null
 ---
 
 # Scheduled official data releases
 
-ONS now confirms the 25 September 2026 Death Certification Reform release date; provisional weekly deaths are also scheduled for 23 September.
+The ONS weekly provisional deaths dataset was observed as published on **23 September 2026** and is preserved in `SRC-ONS-WEEKLY-DEATHS-2026-09-23` / `REC-NHS-2026-0015`.
 
-The watch remains open until the relevant publications are observed and captured. Publication must be verified before any expected item is treated as released.
+The broader September publication commitment is therefore **partially fulfilled**. The watch remains open for the Death Certification Reform releases due on **25 September 2026**. Publication must still be observed before those components are treated as delivered.

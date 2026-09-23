@@ -41,3 +41,7 @@ REC-NHS-2026-0013,related_to,WATCH-NHS-2026-0003,"Publication verification watch
 REC-NHS-2026-0014,derived_from,SRC-DHSC-THIRLWALL-RESPONSE-2026-09-15,"Government full-response promise"
 REC-NHS-2026-0014,follows,REC-NHS-2026-0001,"Stronger preserved Thirlwall accountability baseline"
 REC-NHS-2026-0014,related_to,WATCH-NHS-2026-0001,"Full-response follow-up"
+REC-NHS-2026-0015,derived_from,SRC-ONS-WEEKLY-DEATHS-2026-09-23,"Observed 23 September publication"
+REC-NHS-2026-0015,follows,REC-NHS-2026-0013,"Partial delivery preserves publication baseline"
+REC-NHS-2026-0015,related_to,WATCH-NHS-2026-0003,"Publication verification watch"
+REC-NHS-2026-0016,derived_from,SRC-UKHSA-PRISM-2026-09-23,"UKHSA primary announcement"
