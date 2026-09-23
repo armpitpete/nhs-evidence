@@ -99,7 +99,7 @@ The full Week 39 report is date-gated to **27 September 2026 at 18:00 Europe/Lon
 
 1. The live pilot has not yet reached a due commitment that can honestly demonstrate a real-world **fulfilled** status. Fulfilment is tested in canonical scenarios but must not be fabricated in live evidence.
 2. The Week 39 prototype covers only evidence available through 22 September; it is not a full weekly conclusion.
-3. The protected-main history currently contains no accepted accountability baseline, so cross-branch historical preservation checking becomes materially useful after the first accepted merge.
+3. Accepted accountability baselines are now present on protected `main`; cross-branch historical-preservation validation is active and must continue to prove that later work does not rewrite those baselines.
 4. Some commitments have no stated deadline. They can be watched for an observable event but cannot fairly be labelled late without a supported time expectation.
 5. Remedy evidence may identify credible interventions without establishing that they will solve a specific local problem.
 
@@ -118,6 +118,8 @@ Resulting protected-main SHA:
 `a2635f29a514bcdfc7c5a994146006d3f131f49b`
 
 Post-merge exact-main checks passed.
+
+PR #5 subsequently recorded this post-merge acceptance state, producing protected-main SHA `cbe797c2fccf045c1e70de1878aa00e4fd108c08`. On 23 September 2026, repository validation, accountability invariants, 12 canonical scenarios, hostile tests, baseline-history preservation against `a2635f29a514bcdfc7c5a994146006d3f131f49b`, Promise Ledger reproducibility and `git diff --check` were rerun against exact `cbe797c2fccf045c1e70de1878aa00e4fd108c08` and passed.
 
 ## Final state
 

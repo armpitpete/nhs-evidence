@@ -13,7 +13,7 @@ related_ids:
   - LEAD-NHS-2026-0003
 expected_event: "Publication of the scheduled NHS England, DHSC, UKHSA and ONS releases listed in REC-NHS-2026-0005."
 expected_by: "2026-09-25"
-next_check: "2026-09-24"
+next_check: "2026-09-23"
 last_checked: "2026-09-22T19:51:05+01:00"
 last_result: changed
 closure_reason: null

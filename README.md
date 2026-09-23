@@ -123,7 +123,9 @@ The weekly synthesis freezes the week's evidence window for review. See `automat
 
 Current protected-main acceptance baseline:
 
-`a2635f29a514bcdfc7c5a994146006d3f131f49b`
+`cbe797c2fccf045c1e70de1878aa00e4fd108c08`
+
+This is the protected-main head after PR #5 recorded the Accountability v0.1 post-merge acceptance receipt. Exact-main repository/accountability validation was repeated against this SHA on 23 September 2026 and passed.
 
 v0.4 changes operating effort, not the accepted evidence ontology: lighter daily triage, selective promotion, atomic daily commits, stronger weekly synthesis, tighter watch hygiene, explicit longitudinal change detection and a full-month threshold for monthly synthesis.
 
