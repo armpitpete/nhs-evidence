@@ -19,7 +19,7 @@ Evidence: REC-NHS-2026-0015.
 
 **25 September 2026:** the scheduled Death Certification Reform release set was directly observed. Together with the 23 September release, this completes the bounded September publication commitment.
 
-Evidence: REC-NHS-2026-0016.
+Evidence: REC-NHS-2026-0017.
 
 **Current accountability state: fulfilled.**
 
