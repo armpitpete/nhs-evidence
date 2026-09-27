@@ -14,6 +14,11 @@ explanation_status: unknown
 source_ids:
   - SRC-ONS-WEEKLY-DEATHS-2026-09-23
   - SRC-ONS-DCR-2026-09-25
+tags:
+  - accountability
+  - publication-commitment
+  - mortality
+  - statistics
 relations:
   - type: follows
     target: REC-NHS-2026-0013
