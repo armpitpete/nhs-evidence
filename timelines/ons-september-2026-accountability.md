@@ -2,19 +2,29 @@
 
 ## Preserved baseline
 
-**22 September 2026:** ONS release calendar confirms:
+**22 September 2026:** ONS release calendar confirmed:
 
 - provisional weekly deaths: 23 September 2026;
 - Death Certification Reform 2025: 25 September 2026.
 
 Evidence: REC-NHS-2026-0013.
 
-## Current accountability state
+## Status transitions
 
-**announced**
+**23 September 2026:** the weekly provisional deaths release was directly observed.
 
-As of the baseline date, the releases were future events. A confirmed release calendar is not evidence of publication.
+Evidence: REC-NHS-2026-0015.
+
+**Status:** partially-fulfilled.
+
+**25 September 2026:** the scheduled Death Certification Reform release set was directly observed. Together with the 23 September release, this completes the bounded September publication commitment.
+
+Evidence: REC-NHS-2026-0017.
+
+**Current accountability state: fulfilled.**
+
+This is a publication-delivery finding only. It does not establish that Death Certification Reform has achieved all intended policy outcomes or that the medical-examiner service is effective.
 
 ## Next observable tests
 
-WATCH-NHS-2026-0003 must observe the releases after their scheduled dates and create separate status-change evidence for fulfilled, delayed or unmet status as supported.
+Future weekly-deaths releases are new recurring publication events. Any policy-outcome assessment for Death Certification Reform requires separate evidence and must not be inferred from publication completion.
