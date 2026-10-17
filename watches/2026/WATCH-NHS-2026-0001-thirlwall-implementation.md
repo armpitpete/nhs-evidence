@@ -14,9 +14,9 @@ related_ids:
   - TOPIC-PATIENT-SAFETY
 expected_event: "Publication or retrieval of the underlying NHS England requirements and/or the promised full government response, with enough detail to test implementation, deadlines and assurance."
 expected_by: null
-next_check: "2026-09-24"
-last_checked: "2026-09-23T15:41:37+01:00"
-last_result: source-unavailable
+next_check: "2026-10-24"
+last_checked: "2026-10-17T20:03:00+01:00"
+last_result: no-change
 closure_reason: null
 ---
 
@@ -33,3 +33,7 @@ A bounded primary-source search found no published full government response beyo
 The primary NHS England letter was not captured from an authoritative public NHS England page during this check. Those reported requirements are therefore **discovery evidence only** and have not been promoted into a durable source or accountability baseline.
 
 Re-check on 24 September for the primary letter or another authoritative publication that can establish the requirements directly.
+
+## 17 October 2026 check
+
+A bounded primary-source check found the 15 September initial government response still states that a full response will follow after detailed consideration. The GOV.UK inquiry-report page was updated on 16 October to add Welsh/standalone report materials, not a full mapped government response. No supported status transition is recorded. Re-check 24 October.
