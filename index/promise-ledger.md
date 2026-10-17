@@ -6,8 +6,11 @@ Derived view — **not an authority source**. Baselines and status-change record
 | --- | --- | --- | --- | --- | --- | --- |
 | REC-NHS-2026-0001 | Boards should urgently review the Thirlwall-related recommendations and immediate actions sent by NHS England and follow up. | NHS England / NHS trusts and integrated care boards | — | announced | — | WATCH-NHS-2026-0001 |
 | REC-NHS-2026-0006 | Implement the three core components of Martha's Rule. | NHS England / NHS trusts and NHS foundation trusts | 2027-03-31 | implementation-started | REC-NHS-2026-0011 | WATCH-NHS-2026-0002 |
-| REC-NHS-2026-0013 | Publish the confirmed September health-related releases on their stated release dates, including weekly provisional deaths on 23 September and Death Certification Reform 2025 on 25 September. | Office for National Statistics / Office for National Statistics | 2026-09-25 | announced | — | WATCH-NHS-2026-0003 |
+| REC-NHS-2026-0013 | Publish the confirmed September health-related releases on their stated release dates, including weekly provisional deaths on 23 September and Death Certification Reform 2025 on 25 September. | Office for National Statistics / Office for National Statistics | 2026-09-25 | fulfilled | REC-NHS-2026-0017 | WATCH-NHS-2026-0003 |
 | REC-NHS-2026-0014 | Publish a full government response to the Thirlwall Inquiry recommendations after detailed consideration of the report. | Department of Health and Social Care / Department of Health and Social Care | — | announced | — | WATCH-NHS-2026-0001 |
+| REC-NHS-2026-0018 | Issue draft guidance on managing changes to adaptive AI-enabled medical devices by December 2026. | Medicines and Healthcare products Regulatory Agency / Medicines and Healthcare products Regulatory Agency | 2026-12-31 | announced | — | WATCH-NHS-2026-0005 |
+| REC-NHS-2026-0019 | Publish a full implementation roadmap for all 44 accepted National Commission recommendations by Spring 2027, with roles, responsibilities, timelines and key deliverables. | UK Government / Department of Health and Social Care / MHRA / NHS partners | — | announced | — | WATCH-NHS-2026-0005 |
+| REC-NHS-2026-0020 | Introduce finalised NHS-funded payment arrangements for autism and ADHD services from April 2027 after consultation on a national tariff. | Department of Health and Social Care / NHS England | 2027-04-01 | announced | — | WATCH-NHS-2026-0006 |
 
 ## Interpretation rules
 
