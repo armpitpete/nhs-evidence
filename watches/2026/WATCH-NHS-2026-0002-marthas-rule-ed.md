@@ -18,9 +18,9 @@ related_ids:
   - TOPIC-PATIENT-SAFETY
 expected_event: "Further NHS England setting-level data or implementation updates that show emergency-department coverage/use, plus local evidence when York or Scarborough ED implementation is published."
 expected_by: null
-next_check: "2026-10-01"
-last_checked: "2026-09-22T19:51:05+01:00"
-last_result: changed
+next_check: "2026-11-01"
+last_checked: "2026-10-17T20:03:00+01:00"
+last_result: no-change
 closure_reason: null
 ---
 
@@ -29,3 +29,7 @@ closure_reason: null
 The initial standards/timetable question is now substantially answered: national core standards exist, the Standard Contract sets a 31 March 2027 deadline for the three core components, and phase 3 includes emergency departments.
 
 The watch remains open for the more important operational question: actual ED availability, use, variation and outcomes.
+
+## 17 October 2026 check
+
+The latest NHS England programme publication established in the bounded search remains the July 2026 management-information release. Phase 3 includes emergency departments, maternity and neonatal settings, but no newer national setting-level publication or inspectable York/Scarborough ED implementation evidence was established. This is **no change**, not evidence of non-delivery. Re-check 1 November.
